@@ -85,8 +85,8 @@ h1 { font-size: clamp(2.1rem, 6vw, 3.2rem); }
 .play-button {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  padding: 12px 26px;
+  gap: 12px;
+  padding: 12px 24px 12px 28px;
   border-radius: 999px;
   background: var(--navy);
   border: 2px solid var(--gold);
@@ -96,7 +96,15 @@ h1 { font-size: clamp(2.1rem, 6vw, 3.2rem); }
   transition: background 0.15s, transform 0.15s;
 }
 
-.play-button svg { width: 20px; height: 20px; fill: var(--gold); }
+.play-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.play-button span { line-height: 1.2; }
+
+.play-button.small .play-icon { width: 18px; height: 18px; }
 
 .play-button:hover,
 .play-button:focus-visible { background: var(--teal); transform: translateY(-1px); }
